@@ -30,6 +30,8 @@ python -m torch.distributed.launch --nproc_per_node=4 examples/run_funsd.py \
         --fp16
 ```
 
+> `nproc_per_node` must be set to the number of GPUs on your system. Otherwise, you may see errors such as originating from NCCL. See `python -m torch.distributed.launch --help` for more options.
+
 ## Results
 
 #### FUNSD (field-level)
